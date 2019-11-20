@@ -1,0 +1,16 @@
+<mat-toolbar color="primary" class="example-toolbar">
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+     <h1 class="example-app-name"> Menu </h1>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>Profile</mat-icon>
+        <span>User Profile</span>
+      </button>
+      <button mat-menu-item disabled>
+        <mat-icon>Claim</mat-icon>
+        <span>User Claim</span>
+      </button>
+    </mat-menu>
+    </mat-toolbar>
